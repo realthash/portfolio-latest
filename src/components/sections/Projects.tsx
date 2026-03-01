@@ -20,23 +20,8 @@ const projects = [
         tags: ["HTML5", "CSS"],
         liveUrl: "#",
         githubUrl: "#",
-    },
-    {
-        title: "Social Sphere",
-        description: "A decentralized social network prototype focusing on privacy and content ownership using Web3 technologies.",
-        image: "bg-gradient-to-br from-orange-600/20 to-red-600/20",
-        tags: ["Solidity", "TypeScript", "Ethers.js"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
-    {
-        title: "Developer Tools UI Kit",
-        description: "A premium open-source UI configuration tool and component library designed specifically for complex internal tools.",
-        image: "bg-gradient-to-br from-primary/20 to-blue-800/20",
-        tags: ["React", "Radix UI", "Tailwind CSS"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
+    }
+
 ];
 
 export default function Projects() {

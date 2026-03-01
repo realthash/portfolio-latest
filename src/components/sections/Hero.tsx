@@ -64,8 +64,7 @@ export default function Hero() {
                     </div>
 
                     <p className="max-w-2xl mx-auto text-foreground/60 text-lg md:text-xl leading-relaxed mb-12">
-                        I craft ultra-modern, performant, and premium web experiences. Bridging the gap between
-                        exceptional design and robust engineering to build the internet of tomorrow.
+                        I'm a passionate learner who constantly explores emerging technologies and modern development techniques. I enjoy turning innovative concepts into practical, real-world solutions that improve efficiency and make everyday processes smarter and simpler.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto">

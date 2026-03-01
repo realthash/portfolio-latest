@@ -4,23 +4,24 @@ import { motion } from "framer-motion";
 
 const timeline = [
     {
+        year: "2026 - Present",
+        role: "Software Engineering Intern - pendning",
+        company: "-",
+        description: "",
+    },
+
+    {
         year: "2024 - Present",
-        role: "Frontend Developer Intern",
-        company: "TechNova Solutions",
-        description: "Engineered scalable React architectures, reducing load time by 40%. Implemented complex animations with GSAP and Framer Motion to elevate user experience.",
-    },
-    {
-        year: "2023 - 2024",
-        role: "Freelance Web Developer",
-        company: "Self-Employed",
-        description: "Designed and developed premium portfolio and e-commerce websites for over 10 clients globally, focusing on modern aesthetics, accessibility, and performance.",
-    },
-    {
-        year: "2022 - Present",
         role: "B.S. Computer Science",
         company: "University of Technology",
         description: "Specializing in Human-Computer Interaction and Advanced Algorithms. Core member of the Web Development Society, mentoring junior developers.",
-    }
+    },
+    {
+        year: "2013-2022",
+        role: "Student",
+        company: "Nalanda College",
+        description: "A Nalandian who actively balances academics with sports. Through sports, discipline, teamwork, and time management are developed",
+    },
 ];
 
 export default function Experience() {
