@@ -16,8 +16,8 @@ const projects = [
     {
         title: "Clean and Water Sanitation",
         description: "Real-time financial analytics dashboard powered by AI. Features complex data visualizations and predictive modeling.",
-        image: "bg-gradient-to-br from-emerald-600/20 to-teal-600/20",
-        tags: ["React", "D3.js", "OpenAI", "Node.js"],
+        image: "/BlueSanctuary.PNG",
+        tags: ["HTML5", "CSS"],
         liveUrl: "#",
         githubUrl: "#",
     },

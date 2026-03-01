@@ -52,8 +52,8 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h3 className="text-xl font-heading font-semibold text-white mb-2">Email</h3>
-                                <p className="text-foreground/70">hello@thash.dev</p>
-                                <p className="text-foreground/70">thash.work@gmail.com</p>
+                                <p className="text-foreground/70">work.thashmika@gmail.com</p>
+
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h3 className="text-xl font-heading font-semibold text-white mb-2">Location</h3>
-                                <p className="text-foreground/70">San Francisco, CA</p>
+                                <p className="text-foreground/70">Dehiwala, Colombo, Sri Lanka</p>
                                 <p className="text-foreground/70">Available for Remote Friendly Work</p>
                             </div>
                         </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h3 className="text-xl font-heading font-semibold text-white mb-2">Phone</h3>
-                                <p className="text-foreground/70">+1 (555) 123-4567</p>
+                                <p className="text-foreground/70">+94 77 6 474733</p>
                             </div>
                         </div>
                     </motion.div>
