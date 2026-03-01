@@ -49,7 +49,7 @@ export default function Hero() {
                     </motion.div>
 
                     <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold font-heading tracking-tight mb-6 leading-tight">
-                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">Thash</span>
+                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">Thashmika</span>
                         <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-500">
                             Developer & Designer

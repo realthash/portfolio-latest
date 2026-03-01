@@ -2,18 +2,19 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 
 const projects = [
     {
         title: "Smart Fleet System",
-        description: "A headless e-commerce store built with Next.js, Shopify, and Framer Motion for buttery smooth page transitions and micro-interactions.",
-        image: "bg-gradient-to-br from-blue-600/20 to-purple-600/20",
-        tags: ["Next.js", "Tailwind CSS", "Shopify API"],
+        description: "The Smart Ambulance Tracking and Management System is a web and mobile-based platform that enables real-time GPS tracking of ambulances and centralized management through an admin dashboard. It uses secure authentication, cloud database integration, and API-based communication to ensure efficient driver assignment, route navigation, and live status monitoring.",
+        image: "/logo-darkmode.PNG",
+        tags: ["Typescript", "React", "Next.js", "Tailwind CSS", "Google map API", "Firebase DB", "Firebase API"],
         liveUrl: "#",
         githubUrl: "#",
     },
     {
-        title: "AI Finance Dashboard",
+        title: "Clean and Water Sanitation",
         description: "Real-time financial analytics dashboard powered by AI. Features complex data visualizations and predictive modeling.",
         image: "bg-gradient-to-br from-emerald-600/20 to-teal-600/20",
         tags: ["React", "D3.js", "OpenAI", "Node.js"],
@@ -66,7 +67,17 @@ export default function Projects() {
                             transition={{ duration: 0.6, delay: idx * 0.1 }}
                             className="group relative rounded-[2rem] overflow-hidden glass border border-white/5 hover:border-white/20 transition-all duration-500"
                         >
-                            <div className={`w-full h-72 ${project.image} relative overflow-hidden flex items-center justify-center p-8`}>
+                            <div className={`w-full h-72 relative overflow-hidden flex items-center justify-center p-8`}>
+                                {project.image.startsWith('bg-') ? (
+                                    <div className={`absolute inset-0 ${project.image}`} />
+                                ) : (
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                )}
                                 <div className="absolute inset-0 bg-background/50 group-hover:bg-transparent transition-colors duration-700" />
 
                                 {/* Simulated abstract visual for project image */}
