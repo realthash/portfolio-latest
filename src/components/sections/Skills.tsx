@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 const skillsMap = [
     { category: "Languages", items: ["Python", "Java", "JavaScript", "TypeScript", "HTML5", "CSS3"] },
-    { category: "Frontend", items: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "GSAP", "Three.js"] },
-    { category: "Backend & Database", items: ["Node.js", "Express", "Firebase", "MongoDB", "SQL", "PostgreSQL"] },
-    { category: "Tools & Others", items: ["Git", "Figma", "REST APIs", "Vercel", "Linux", "Docker"] },
+    { category: "Frontend", items: ["React", "Next.js", "Tailwind CSS"] },
+    { category: "Backend & Database", items: ["Firebase", "SQL"] },
+    { category: "Tools & Others", items: ["Git", "Figma", "REST APIs", "Vercel"] },
 ];
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-24 relative overflow-hidden bg-white/5 dark:bg-black/20">
+        <section id="skills" className="py-24 relative overflow-hidden bg-black/5 dark:bg-black/20">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -35,9 +35,9 @@ export default function Skills() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.6, delay: idx * 0.1 }}
-                            className="glass p-8 md:p-10 rounded-[2rem] border-white/5 hover:border-white/10 transition-colors"
+                            className="glass p-8 md:p-10 rounded-[2rem] border-black/5 dark:border-white/5 hover:border-black/10 dark:hover:border-white/10 transition-colors"
                         >
-                            <h3 className="text-2xl font-heading font-semibold mb-8 text-white">{skillSet.category}</h3>
+                            <h3 className="text-2xl font-heading font-semibold mb-8 text-slate-900 dark:text-white">{skillSet.category}</h3>
                             <div className="flex flex-wrap gap-3">
                                 {skillSet.items.map((item, itemIdx) => (
                                     <motion.div
@@ -52,7 +52,7 @@ export default function Skills() {
                                             delay: idx * 0.1 + itemIdx * 0.05,
                                             type: "spring", stiffness: 200, damping: 10
                                         }}
-                                        className="px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-foreground/80 hover:text-white hover:bg-primary/20 hover:border-primary/50 transition-all cursor-default shadow-sm"
+                                        className="px-5 py-2.5 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-full text-foreground/80 hover:text-slate-900 dark:hover:text-white hover:bg-primary/20 hover:border-primary/50 transition-all cursor-default shadow-sm"
                                     >
                                         {item}
                                     </motion.div>

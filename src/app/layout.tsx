@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScroller from "@/components/layout/SmoothScroller";
 import Navbar from "@/components/layout/Navbar";
 import CustomCursor from "@/components/layout/CustomCursor";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,15 +27,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-background text-foreground min-h-screen selection:bg-primary/30 selection:text-white`}
+        className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-background text-foreground min-h-screen selection:bg-primary/30 selection:text-primary dark:selection:text-white`}
       >
-        <SmoothScroller>
-          <CustomCursor />
-          <Navbar />
-          {children}
-        </SmoothScroller>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SmoothScroller>
+            <CustomCursor />
+            <Navbar />
+            {children}
+          </SmoothScroller>
+        </ThemeProvider>
       </body>
     </html>
   );

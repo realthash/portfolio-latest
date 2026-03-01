@@ -31,7 +31,7 @@ export default function Contact() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="mb-16 text-center flex flex-col items-center"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4 text-white">Let&apos;s Connect</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4 text-slate-900 dark:text-white">Let&apos;s Connect</h2>
                     <div className="w-20 h-1 bg-primary rounded-full mb-6" />
                     <p className="text-foreground/60 max-w-2xl text-lg">
                         Have a project in mind or just want to chat? Feel free to reach out. I&apos;m currently open to new opportunities.
@@ -51,7 +51,7 @@ export default function Contact() {
                                 <Mail className="w-6 h-6" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-heading font-semibold text-white mb-2">Email</h3>
+                                <h3 className="text-xl font-heading font-semibold text-slate-900 dark:text-white mb-2">Email</h3>
                                 <p className="text-foreground/70">work.thashmika@gmail.com</p>
 
                             </div>
@@ -62,7 +62,7 @@ export default function Contact() {
                                 <MapPin className="w-6 h-6" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-heading font-semibold text-white mb-2">Location</h3>
+                                <h3 className="text-xl font-heading font-semibold text-slate-900 dark:text-white mb-2">Location</h3>
                                 <p className="text-foreground/70">Dehiwala, Colombo, Sri Lanka</p>
                                 <p className="text-foreground/70">Available for Remote Friendly Work</p>
                             </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                                 <Phone className="w-6 h-6" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-heading font-semibold text-white mb-2">Phone</h3>
+                                <h3 className="text-xl font-heading font-semibold text-slate-900 dark:text-white mb-2">Phone</h3>
                                 <p className="text-foreground/70">+94 77 6 474733</p>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ export default function Contact() {
                                 id="name"
                                 value={formState.name}
                                 onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                                className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-primary/50 text-white peer placeholder-transparent transition-all hover:border-white/20"
+                                className="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl px-5 py-4 outline-none focus:border-primary/50 text-slate-900 dark:text-white peer placeholder-transparent transition-all hover:border-black/20 dark:hover:border-white/20"
                                 placeholder=" "
                                 required
                             />
@@ -110,7 +110,7 @@ export default function Contact() {
                                 id="email"
                                 value={formState.email}
                                 onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                                className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-primary/50 text-white peer placeholder-transparent transition-all hover:border-white/20"
+                                className="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl px-5 py-4 outline-none focus:border-primary/50 text-slate-900 dark:text-white peer placeholder-transparent transition-all hover:border-black/20 dark:hover:border-white/20"
                                 placeholder=" "
                                 required
                             />
@@ -124,7 +124,7 @@ export default function Contact() {
                                 id="message"
                                 value={formState.message}
                                 onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                                className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-primary/50 text-white peer placeholder-transparent transition-all min-h-[160px] resize-none hover:border-white/20"
+                                className="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl px-5 py-4 outline-none focus:border-primary/50 text-slate-900 dark:text-white peer placeholder-transparent transition-all min-h-[160px] resize-none hover:border-black/20 dark:hover:border-white/20"
                                 placeholder=" "
                                 required
                             />

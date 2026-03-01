@@ -35,7 +35,7 @@ export default function Experience() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="mb-20 text-center flex flex-col items-center"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4 text-white">Experience & Education</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4 text-slate-900 dark:text-white">Experience & Education</h2>
                     <div className="w-20 h-1 bg-primary rounded-full mb-6" />
                 </motion.div>
 
@@ -57,10 +57,9 @@ export default function Experience() {
                             <div className="absolute -left-[29px] top-8 md:top-auto md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-primary ring-4 ring-background z-10 shadow-[0_0_20px_rgba(59,130,246,0.8)]" />
 
                             <div className="w-full md:w-1/2 md:px-12 flex flex-col pl-4 md:pl-12">
-                                <div className={`glass p-8 md:p-10 rounded-3xl relative hover:border-white/20 transition-all duration-300 group ${idx % 2 === 0 ? "md:text-right" : "md:text-left"
-                                    }`}>
+                                <div className={`glass p-8 md:p-10 rounded-3xl relative hover:border-black/20 dark:hover:border-white/20 transition-all duration-300 group ${idx % 2 === 0 ? "md:text-right" : "md:text-left"} ${idx === timeline.length - 1 ? "" : "mb-2"}`}>
                                     <span className="text-primary font-mono text-sm md:text-base font-semibold tracking-wider block mb-3 group-hover:text-purple-400 transition-colors">{item.year}</span>
-                                    <h3 className="text-2xl md:text-3xl font-bold font-heading text-white mb-2">{item.role}</h3>
+                                    <h3 className="text-2xl md:text-3xl font-bold font-heading text-slate-900 dark:text-white mb-2">{item.role}</h3>
                                     <h4 className="text-lg md:text-xl text-foreground/80 font-medium mb-5">{item.company}</h4>
                                     <p className="text-foreground/60 leading-relaxed text-sm md:text-base">
                                         {item.description}

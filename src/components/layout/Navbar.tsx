@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
     { name: "About", href: "#about" },
@@ -33,10 +34,12 @@ export default function Navbar() {
                 scrolled ? "py-4" : "py-8"
             )}
         >
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 flex justify-center pointer-events-auto">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center pointer-events-none">
+                <div className="flex-1" /> {/* Spacer */}
+
                 <nav
                     className={cn(
-                        "flex items-center gap-6 sm:gap-8 px-6 sm:px-8 py-3 rounded-full transition-all duration-500",
+                        "flex items-center gap-6 sm:gap-8 px-6 sm:px-8 py-3 rounded-full transition-all duration-500 pointer-events-auto",
                         scrolled
                             ? "glass shadow-lg shadow-black/5 dark:shadow-white/5"
                             : "bg-transparent"
@@ -46,13 +49,17 @@ export default function Navbar() {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium text-foreground hover:text-white transition-colors relative group"
+                            className="text-sm font-medium text-foreground hover:text-slate-900 dark:hover:text-white transition-colors relative group"
                         >
                             <span className="relative z-10">{link.name}</span>
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full rounded-full" />
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-900 dark:bg-white transition-all duration-300 group-hover:w-full rounded-full" />
                         </a>
                     ))}
                 </nav>
+
+                <div className="flex-1 flex justify-end pointer-events-auto">
+                    <ThemeToggle />
+                </div>
             </div>
         </motion.header>
     );

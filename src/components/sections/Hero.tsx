@@ -49,7 +49,7 @@ export default function Hero() {
                     </motion.div>
 
                     <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold font-heading tracking-tight mb-6 leading-tight">
-                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-br from-white to-white/60">Thashmika</span>
+                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-slate-600 dark:from-white dark:to-white/60">Thashmika</span>
                         <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-500">
                             Developer & Designer
@@ -72,19 +72,19 @@ export default function Hero() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             href="#projects"
-                            className="group w-full sm:w-auto relative px-8 py-4 bg-white text-black rounded-full font-semibold overflow-hidden flex items-center justify-center gap-2"
+                            className="group w-full sm:w-auto relative px-8 py-4 bg-slate-900 text-white dark:bg-white dark:text-black rounded-full font-semibold overflow-hidden flex items-center justify-center gap-2"
                         >
                             <div className="absolute inset-0 bg-primary translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-[0.22,1,0.36,1]" />
-                            <span className="relative z-10 group-hover:text-white transition-colors duration-300">View My Work</span>
-                            <ArrowRight className="relative z-10 w-4 h-4 group-hover:text-white group-hover:translate-x-1 transition-all duration-300" />
+                            <span className="relative z-10 transition-colors duration-300">View My Work</span>
+                            <ArrowRight className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-all duration-300" />
                         </motion.a>
 
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="/resume.pdf"
+                            href="/Thashmika-CV.pdf"
                             target="_blank"
-                            className="w-full sm:w-auto px-8 py-4 glass rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-white/5 border-white/10 transition-colors"
+                            className="w-full sm:w-auto px-8 py-4 glass rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-black/5 dark:hover:bg-white/5 border-black/10 dark:border-white/10 transition-colors text-slate-900 dark:text-white"
                         >
                             <span>Download Resume</span>
                             <Download className="w-4 h-4" />
