@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   description: "Senior Frontend Engineer Portfolio showcasing premium animations and modern web development.",
 };
 
+import BackgroundEffects from "@/components/layout/BackgroundEffects";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,6 +39,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <BackgroundEffects />
           <SmoothScroller>
             <CustomCursor />
             <Navbar />
