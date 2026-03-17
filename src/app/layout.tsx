@@ -17,8 +17,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Premium Portfolio | Senior Frontend Engineer",
-  description: "Senior Frontend Engineer Portfolio showcasing premium animations and modern web development.",
+  title: "Thash's Portfolio ",
+  description: "Sofware Engineer Portfolio showcasing hand on projects, achievements and skills.",
 };
 
 import BackgroundEffects from "@/components/layout/BackgroundEffects";
