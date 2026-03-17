@@ -17,7 +17,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Thash's Portfolio ",
+  title: "Build With THASH",
   description: "Sofware Engineer Portfolio showcasing hand on projects, achievements and skills.",
 };
 
