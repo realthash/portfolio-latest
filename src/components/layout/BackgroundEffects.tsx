@@ -21,8 +21,8 @@ export default function BackgroundEffects() {
             {/* Background Base */}
             <div className="absolute inset-0 bg-background transition-colors duration-700" />
             
-            {/* Animated Orbs */}
-            <div className="absolute inset-0 overflow-hidden opacity-30 dark:opacity-20 blur-[100px]">
+            {/* Animated Orbs - Reduced for mobile performance */}
+            <div className="absolute inset-0 overflow-hidden opacity-30 dark:opacity-20 blur-[60px] md:blur-[100px]">
                 <motion.div
                     animate={{
                         x: [0, 100, 0],
@@ -49,6 +49,7 @@ export default function BackgroundEffects() {
                     }}
                     className="absolute top-[20%] -right-[10%] w-[45%] h-[45%] rounded-full bg-blue-400/30 dark:bg-blue-600/20"
                 />
+                {/* Hide third orb on mobile to save GPU cycles */}
                 <motion.div
                     animate={{
                         x: [0, 120, 0],
@@ -60,7 +61,7 @@ export default function BackgroundEffects() {
                         repeat: Infinity,
                         ease: "linear",
                     }}
-                    className="absolute -bottom-[10%] left-[20%] w-[55%] h-[55%] rounded-full bg-indigo-500/20 dark:bg-indigo-700/10"
+                    className="hidden md:block absolute -bottom-[10%] left-[20%] w-[55%] h-[55%] rounded-full bg-indigo-500/20 dark:bg-indigo-700/10"
                 />
             </div>
 

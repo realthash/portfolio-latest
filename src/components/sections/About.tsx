@@ -8,10 +8,10 @@ export default function About() {
         <section id="about" className="py-24 relative overflow-hidden">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                     className="mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">About Me</h2>
@@ -38,7 +38,11 @@ export default function About() {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
+                        transition={{
+                            duration: 0.3,
+                            delay: 0.1, // Simplified delay for this specific component
+                            type: "tween", ease: "easeOut"
+                        }}
                         className="grid grid-cols-1 sm:grid-cols-2 gap-4 relative"
                     >
                         {/* Background glow for cards */}
