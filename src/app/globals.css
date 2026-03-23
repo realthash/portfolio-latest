@@ -32,8 +32,8 @@ body {
 /* Glassmorphism utilities - Optimized for mobile */
 .glass {
   background: rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -47,6 +47,15 @@ body {
 .dark .glass {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbar and utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Base custom scrollbar */

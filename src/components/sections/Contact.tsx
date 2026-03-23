@@ -27,7 +27,7 @@ export default function Contact() {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "-20px" }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="mb-16 text-center flex flex-col items-center"
                 >
@@ -42,7 +42,7 @@ export default function Contact() {
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        viewport={{ once: true, margin: "-20px" }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="space-y-8"
                     >
@@ -82,10 +82,10 @@ export default function Contact() {
                     <motion.form
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        viewport={{ once: true, margin: "-20px" }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                         onSubmit={handleSubmit}
-                        className="glass p-8 md:p-10 rounded-[2rem] flex flex-col gap-6 relative overflow-hidden"
+                        className="glass p-8 md:p-10 rounded-[2rem] flex flex-col gap-6 relative overflow-hidden will-change-transform"
                     >
                         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px] pointer-events-none" />
 

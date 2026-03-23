@@ -10,7 +10,7 @@ export default function About() {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
+                    viewport={{ once: true, margin: "-20px" }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     className="mb-16"
                 >
@@ -22,7 +22,7 @@ export default function About() {
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        viewport={{ once: true, margin: "-20px" }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="space-y-6 text-foreground/70 text-lg leading-relaxed mix-blend-plus-lighter"
                     >
@@ -37,7 +37,7 @@ export default function About() {
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        viewport={{ once: true, margin: "-20px" }}
                         transition={{
                             duration: 0.3,
                             delay: 0.1, // Simplified delay for this specific component
@@ -64,7 +64,7 @@ export default function About() {
                             <p className="text-foreground/60 text-sm leading-relaxed">Every bug is treated as a lesson and every project is seen as a chance to master something new.</p>
                         </div>
 
-                        <div className="glass p-6 md:p-8 rounded-3xl flex flex-col gap-4 hover:-translate-y-2 transition-transform duration-300 relative z-10 border-black/10 dark:border-white/10 sm:col-span-2 md:col-span-1 dark:hover:border-blue-400/30 md:translate-x-1/2 md:-translate-y-0">
+                        <div className="glass p-6 md:p-8 rounded-3xl flex flex-col gap-4 hover:-translate-y-2 transition-transform duration-300 relative z-10 border-black/10 dark:border-white/10 sm:col-span-2 md:col-span-1 dark:hover:border-blue-400/30 md:translate-x-1/2 md:-translate-y-0 will-change-transform">
                             <div className="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-2">
                                 <User className="w-6 h-6" />
                             </div>

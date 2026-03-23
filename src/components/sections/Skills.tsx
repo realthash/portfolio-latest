@@ -16,7 +16,7 @@ export default function Skills() {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
+                    viewport={{ once: true, margin: "-20px" }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     className="mb-16 text-center flex flex-col items-center"
                 >
@@ -33,9 +33,9 @@ export default function Skills() {
                             key={skillSet.category}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-30px" }}
+                            viewport={{ once: true, margin: "-20px" }}
                             transition={{ duration: 0.4, delay: idx * 0.05 }}
-                            className="glass p-8 md:p-10 rounded-[2rem] border-black/5 dark:border-white/5 hover:border-black/10 dark:hover:border-white/10 transition-colors"
+                            className="glass p-8 md:p-10 rounded-[2rem] border-black/5 dark:border-white/5 hover:border-black/10 dark:hover:border-white/10 transition-colors will-change-transform"
                         >
                             <h3 className="text-2xl font-heading font-semibold mb-8 text-slate-900 dark:text-white">{skillSet.category}</h3>
                             <div className="flex flex-wrap gap-3">

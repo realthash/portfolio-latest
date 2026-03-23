@@ -31,7 +31,7 @@ export default function Experience() {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "-20px" }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="mb-20 text-center flex flex-col items-center"
                 >
@@ -46,12 +46,12 @@ export default function Experience() {
                     {timeline.map((item, idx) => (
                         <motion.div
                             key={idx}
-                            initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
+                            initial={{ opacity: 0, y: 50, filter: "blur(4px)" }} // Reduced blur from 10px
                             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                            viewport={{ once: true, margin: "-100px" }}
+                            viewport={{ once: true, margin: "-20px" }}
                             transition={{ duration: 0.8, delay: idx * 0.1, type: "spring", stiffness: 100 }}
                             className={`relative flex flex-col md:flex-row gap-8 ${idx % 2 === 0 ? "md:flex-row-reverse" : ""
-                                } items-start md:items-center`}
+                                } items-start md:items-center will-change-transform`}
                         >
                             {/* Timeline dot */}
                             <div className="absolute -left-[29px] top-8 md:top-auto md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-primary ring-4 ring-background z-10 shadow-[0_0_20px_rgba(59,130,246,0.8)]" />

@@ -62,7 +62,7 @@ export default function Projects() {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "-20px" }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="mb-16"
                 >
@@ -90,9 +90,9 @@ export default function Projects() {
                                 key={project.title}
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
+                                viewport={{ once: true, margin: "-20px" }}
                                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                                className="group relative rounded-[2rem] overflow-hidden glass border border-black/5 dark:border-white/5 hover:border-black/20 dark:hover:border-white/20 transition-all duration-500"
+                                className="group relative rounded-[2rem] overflow-hidden glass border border-black/5 dark:border-white/5 hover:border-black/20 dark:hover:border-white/20 transition-all duration-500 will-change-transform"
                             >
                                 <div className={`w-full h-72 relative overflow-hidden flex items-center justify-center p-8`}>
                                     {displayImage.startsWith('bg-') ? (

@@ -25,8 +25,8 @@ export default function Hero() {
     return (
         <section id="hero" className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20">
             {/* Background gradients */}
-            <div className="absolute top-[10%] left-[10%] w-[30rem] h-[30rem] bg-primary/20 rounded-full blur-[120px] pointer-events-none opacity-60 mix-blend-screen" />
-            <div className="absolute bottom-[10%] right-[10%] w-[40rem] h-[40rem] bg-purple-600/10 rounded-full blur-[150px] pointer-events-none opacity-60 mix-blend-screen" />
+            <div className="absolute top-[10%] left-[10%] w-[30rem] h-[30rem] bg-primary/20 rounded-full blur-[40px] md:blur-[120px] pointer-events-none opacity-60 mix-blend-screen will-change-transform" />
+            <div className="absolute bottom-[10%] right-[10%] w-[40rem] h-[40rem] bg-purple-600/10 rounded-full blur-[60px] md:blur-[150px] pointer-events-none opacity-60 mix-blend-screen will-change-transform" />
 
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10 flex flex-col items-center text-center">
                 <motion.div

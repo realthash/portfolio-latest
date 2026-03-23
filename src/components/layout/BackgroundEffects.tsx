@@ -22,7 +22,7 @@ export default function BackgroundEffects() {
             <div className="absolute inset-0 bg-background transition-colors duration-700" />
             
             {/* Animated Orbs - Reduced for mobile performance */}
-            <div className="absolute inset-0 overflow-hidden opacity-30 dark:opacity-20 blur-[60px] md:blur-[100px]">
+            <div className="absolute inset-0 overflow-hidden opacity-30 dark:opacity-20 blur-[40px] md:blur-[100px]">
                 <motion.div
                     animate={{
                         x: [0, 100, 0],
@@ -34,7 +34,7 @@ export default function BackgroundEffects() {
                         repeat: Infinity,
                         ease: "linear",
                     }}
-                    className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/40 dark:bg-primary/30"
+                    className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/40 dark:bg-primary/30 will-change-transform"
                 />
                 <motion.div
                     animate={{
@@ -47,7 +47,7 @@ export default function BackgroundEffects() {
                         repeat: Infinity,
                         ease: "linear",
                     }}
-                    className="absolute top-[20%] -right-[10%] w-[45%] h-[45%] rounded-full bg-blue-400/30 dark:bg-blue-600/20"
+                    className="absolute top-[20%] -right-[10%] w-[45%] h-[45%] rounded-full bg-blue-400/30 dark:bg-blue-600/20 will-change-transform"
                 />
                 {/* Hide third orb on mobile to save GPU cycles */}
                 <motion.div
@@ -61,7 +61,7 @@ export default function BackgroundEffects() {
                         repeat: Infinity,
                         ease: "linear",
                     }}
-                    className="hidden md:block absolute -bottom-[10%] left-[20%] w-[55%] h-[55%] rounded-full bg-indigo-500/20 dark:bg-indigo-700/10"
+                    className="hidden md:block absolute -bottom-[10%] left-[20%] w-[55%] h-[55%] rounded-full bg-indigo-500/20 dark:bg-indigo-700/10 will-change-transform"
                 />
             </div>
 

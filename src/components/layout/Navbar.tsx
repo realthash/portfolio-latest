@@ -10,6 +10,7 @@ const navLinks = [
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
+    { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -40,6 +41,7 @@ export default function Navbar() {
                 <nav
                     className={cn(
                         "flex items-center gap-6 sm:gap-8 px-6 sm:px-8 py-3 rounded-full transition-all duration-500 pointer-events-auto",
+                        "max-w-[calc(100vw-8rem)] sm:max-w-none overflow-x-auto sm:overflow-x-visible no-scrollbar whitespace-nowrap",
                         scrolled
                             ? "glass shadow-lg shadow-black/5 dark:shadow-white/5"
                             : "bg-transparent"
@@ -49,7 +51,7 @@ export default function Navbar() {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium text-foreground hover:text-slate-900 dark:hover:text-white transition-colors relative group"
+                            className="text-sm font-medium text-foreground hover:text-slate-900 dark:hover:text-white transition-colors relative group shrink-0"
                         >
                             <span className="relative z-10">{link.name}</span>
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-900 dark:bg-white transition-all duration-300 group-hover:w-full rounded-full" />
