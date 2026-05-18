@@ -77,7 +77,7 @@ export default function Certifications() {
                                         href={cert.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="p-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white hover:bg-primary transition-colors shadow-lg"
+                                        className="flex items-center justify-center w-9 h-9 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white hover:bg-primary transition-colors shadow-lg"
                                     >
                                         <ExternalLink className="w-4 h-4" />
                                     </a>

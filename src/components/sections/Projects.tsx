@@ -19,8 +19,16 @@ const projects = [
         githubUrl: "#",
     },
     {
+        title: "Mini Service Request Board",
+        description: "A production-ready service request marketplace, enabling homeowners to post home service requests and tradespeople to browse, filter, and manage jobs in real time",
+        image: "/next.svg",
+        tags: ["Next.js", "Express.js", "Tailwind CSS", "Mongo DB Atlas", "Mongoose"],
+        liveUrl: "https://mini-service-request-board-eem6.vercel.app/",
+        githubUrl: "https://github.com/realthash/Mini-Service-Request-Board.git",
+    },
+    {
         title: "Clean and Water Sanitation",
-        description: "Real-time financial analytics dashboard powered by AI. Features complex data visualizations and predictive modeling.",
+        description: " A responsive front-end interface using modern HTML5 and CSS3 practices to ensure cross-browser compatibility and a responsive user experience",
         image: "/BlueSanctuary.PNG",
         tags: ["HTML5", "CSS"],
         liveUrl: "#",

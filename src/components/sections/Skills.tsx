@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const skillsMap = [
-    { category: "Languages", items: ["Python", "Java", "JavaScript", "TypeScript", "HTML5", "CSS3"] },
+    { category: "Languages", items: ["Java", "JavaScript", "TypeScript", "Python", "HTML5", "CSS3"] },
     { category: "Frontend", items: ["React", "Next.js", "Tailwind CSS"] },
-    { category: "Backend & Database", items: ["Firebase", "SQL"] },
-    { category: "Tools & Others", items: ["Git", "Figma", "REST APIs", "Vercel"] },
+    { category: "Backend & Database", items: ["Nest.js", "Express.js", "Firebase", "MySql", "Mongo DB Atlas", "PostgreSQL"] },
+    { category: "Tools & Others", items: ["Git", "Figma", "REST APIs", "Vercel", "Railway"] },
 ];
 
 export default function Skills() {
