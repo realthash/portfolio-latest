@@ -12,8 +12,8 @@ const timeline = [
 
     {
         year: "2024 - Present",
-        role: "B.S. Computer Science",
-        company: "University of Technology",
+        role: "BSc(Hons) Computer Science",
+        company: "Informatics Institute of Technology (IIT) - University of Westminster, London",
         description: "Specializing in Human-Computer Interaction and Advanced Algorithms. Core member of the Web Development Society, mentoring junior developers.",
     },
     {
