@@ -5,9 +5,7 @@ import { Github, Linkedin, Twitter, Dribbble, ArrowUp } from "lucide-react";
 
 const links = [
     { name: "GitHub", icon: Github, url: "https://github.com/realthash" },
-    { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com/in/thashmika-rathnayake-69820b353" },
-    { name: "Twitter", icon: Twitter, url: "#" },
-    { name: "Dribbble", icon: Dribbble, url: "#" },
+    { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com/in/thashmika-rathnayake-69820b353" }
 ];
 
 export default function Footer() {
