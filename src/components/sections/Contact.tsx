@@ -63,7 +63,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h3 className="text-xl font-heading font-semibold text-slate-900 dark:text-white mb-2">Location</h3>
-                                <p className="text-foreground/70">Dehiwala, Colombo, Sri Lanka</p>
+                                <p className="text-foreground/70">Narahenpita, Colombo, Sri Lanka</p>
                                 <p className="text-foreground/70">Available for Remote Friendly Work</p>
                             </div>
                         </div>
