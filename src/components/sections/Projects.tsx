@@ -37,8 +37,8 @@ const projects = [
             "CSS3",
             "Component Architecture"
         ],
-        liveUrl: "", // Replace with your live deployment link
-        githubUrl: "https://github.com/realthash/react-course/tree/main/chatbot-project", // Or "#"
+        liveUrl: "",
+        githubUrl: "https://github.com/realthash/react-course/tree/main/chatbot-project",
     },
     {
         title: "Clean and Water Sanitation",
