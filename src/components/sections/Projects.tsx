@@ -14,7 +14,7 @@ const projects = [
         },
         tags: ["Typescript", "React", "Next.js", "Tailwind CSS", "Google map API", "Firebase DB", "Firebase API"],
         liveUrl: "https://medigoadmin.vercel.app/",
-        githubUrl: "https://medigo.vercel.app/",
+        githubUrl: "https://github.com/SDGP-03/MediGo",
     },
     {
         title: "Mini Service Request Board",
@@ -22,8 +22,19 @@ const projects = [
         image: "/next.svg",
         tags: ["Next.js", "Express.js", "Tailwind CSS", "Mongo DB Atlas", "Mongoose"],
         liveUrl: "https://mini-service-request-board-eem6.vercel.app/",
-        githubUrl: "https://github.com/realthash/Mini-Service-Request-Board.git",
+        githubUrl: "https://github.com/realthash/Mini-Service-Request-Board",
     }, {
+        title: "E-commerce Platform",
+        description: "A complete full-stack e-commerce application featuring a component-driven React frontend client and an Express/Sequelize backend REST API. It supports product search and filtering, real-time cart management, dynamic checkout calculations with delivery option selection, order placement, and delivery status tracking.",
+        image: {
+            light: "/mobile-logo.png",
+            dark: "/mobile-logo-white.png"
+        },
+        tags: ["React", "Vite", "React Router", "Express", "Node.js", "Sequelize", "SQLite", "REST API", "CSS3"],
+        liveUrl: "https://e-commerce-beta-mauve.vercel.app/",
+        githubUrl: "https://github.com/realthash/e-commerce"
+    }
+    , {
         title: "Interactive Chatbot",
         description: "An interactive, real-time chatbot web application built with React and Vite that provides automated conversational responses. It features asynchronous API communication with dynamic loading indicators, auto-scrolling message history, keyboard event handling for instant messaging, and a modular component architecture for seamless user-bot interaction.",
         image: {
