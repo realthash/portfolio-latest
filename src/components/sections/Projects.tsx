@@ -30,7 +30,7 @@ const projects = [
             light: "/mobile-logo.png",
             dark: "/mobile-logo-white.png"
         },
-        tags: ["React", "Vite", "React Router", "Express", "Node.js", "Sequelize", "SQLite", "REST API", "CSS3"],
+        tags: ["React", "Vite", "Express", "Node.js", "REST API", "CSS3"],
         liveUrl: "https://e-commerce-beta-mauve.vercel.app/",
         githubUrl: "https://github.com/realthash/e-commerce"
     }
@@ -51,6 +51,16 @@ const projects = [
         liveUrl: "",
         githubUrl: "https://github.com/realthash/react-course/tree/main/chatbot-project",
     },
+    {
+        title: "Inventory Management System",
+        description: "A full-featured inventory and stock tracking application featuring product & category management, real-time stock adjustments, audit history logs, and validation workflows.",
+        image: "/inventory.png",
+        tags: ["React", "Vite", "Formik", "Yup"],
+        liveUrl: "https://inventory-management-system-by-thash.vercel.app/",
+        githubUrl: "https://github.com/realthash/Inventory-Management-System",
+    }
+
+    ,
     {
         title: "Clean and Water Sanitation",
         description: " A responsive front-end interface using modern HTML5 and CSS3 practices to ensure cross-browser compatibility and a responsive user experience",
